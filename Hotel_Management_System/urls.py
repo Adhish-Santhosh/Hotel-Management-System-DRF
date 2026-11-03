@@ -21,13 +21,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
 
-    path('room/', views.RoomAPI.as_view()),
+    path('api/room/', views.RoomAPI.as_view()),
 
-    path('booking/', views.BookingAPI.as_view()),
+    path('api/booking/', views.BookingAPI.as_view()),
 
-    path('booking/update/<int:id>/', views.UpdateBookingAPI.as_view()),
+    path('api/booking/update/<int:id>/', views.UpdateBookingAPI.as_view()),
 
-    path('booking/delete/<int:id>/', views.DeleteBookingAPI.as_view()),
+    path('api/booking/delete/<int:id>/', views.DeleteBookingAPI.as_view()),
+
 
 ]
 
