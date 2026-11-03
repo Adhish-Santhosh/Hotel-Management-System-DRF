@@ -1,0 +1,48 @@
+### 1. GET ALL ROOMS
+GET http://127.0.0.1:8000/api/room/
+
+
+### 2. ADD ROOM
+POST http://127.0.0.1:8000/api/room/
+Content-Type: application/json
+
+{
+    "Room_Number": 101,
+    "Room_Type": "AC Deluxe",
+    "Price_Per_Day": 2500,
+    "Available": true
+}
+
+
+### 3. GET ALL BOOKINGS
+GET http://127.0.0.1:8000/api/booking/
+
+
+### 4. ADD BOOKING
+POST http://127.0.0.1:8000/api/booking/
+Content-Type: application/json
+
+{
+    "Customer_Name": "Adhish",
+    "Mobile": "9876543210",
+    "room": 1,
+    "Check_In": "2026-11-05",
+    "Check_Out": "2026-11-08"
+}
+
+
+### 5. UPDATE BOOKING
+PUT http://127.0.0.1:8000/api/booking/update/1/
+Content-Type: application/json
+
+{
+    "Customer_Name": "Adhish Santhosh",
+    "Mobile": "9876543210",
+    "room": 1,
+    "Check_In": "2026-11-05",
+    "Check_Out": "2026-11-09"
+}
+
+
+### 6. DELETE BOOKING
+DELETE http://127.0.0.1:8000/api/booking/delete/1/
